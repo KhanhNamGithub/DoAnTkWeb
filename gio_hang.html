@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reponsive.css">  
+    <link rel="stylesheet" href="fontawesome-free-5.15.3-web/css/all.min.css">
+    <link rel="stylesheet" href="css/css_gio_hang.css">  
+    <script src="jquery-3.6.0.min.js"></script>
+    <title>Giỏ hàng</title>
+</head>
+<body>
+    <section>
+        <div class="header">
+            <div id="top1">
+                <a href="index.html"><img src="image/1x/logo_phone.jfif" style="width: 60%; height: 190%;"></a>               
+            </div>
+            <div class="seachbox">
+                <input type="text" placeholder="Tìm Kiếm Sản Phẩm ">
+                <div class="seach-btn">
+                    <a href="#"><i class="fa fa-search fa-2x" aria-hidden="true" style="color: white;"></i></a>
+                </div>
+            </div>
+            <div id="phone">
+                <img src="image/phone.svg" alt="">
+                <p>Gọi đặt hàng:</p>
+                <h2>2001210288</h2>
+            </div>
+            <div id="diachi">
+
+                <a href="https://goo.gl/maps/TfWURzQYkmLStJyi6">
+                    <img src="image/user.svg" alt="icon_map">
+                    <p>Tìm cửa hàng</p></a>
+            </div>
+        </div>
+    </section>
+    <section id="menu">
+       <ul>
+            <li><a href="index.html"><b>Trang Chủ</b></a></li>
+            <li><a href="dien_thoai_view.html"><b>Điện Thoại</b></a>
+                <ul class="submenu">
+                    <li><a href="#"><b>Hãng Sản Xuất</b></a>
+                        <ul class="submenu1">
+                            <li><a href="brand_samsung.html"><b>Samsung</b></a></li>
+                                <li><a href="brand_apple.html"><b>Apple</b></a></li>
+                                <li><a href="#"><b>Sony</b></a></li>
+                                <li><a href="#"><b>Xiaomi</b></a></li>
+                                <li><a href="#"><b>Oppo</b></a></li>
+                                <li><a href="#"><b>Huawei</b></a></li>
+                                <li><a href="#"><b>Vinsmart</b></a></li>
+                                <li><a href="#"><b>Nokia</b></a></li>
+                                <li><a href="#"><b>Vivo</b></a></li>
+                                <li><a href="#"><b>Bphone</b></a></li>
+                                <li><a href="#"><b>Oneplus</b></a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#"><b>Mức Giá</b></a>
+                        <ul class="submenu1">
+                            <li><a href="#"><b>dưới 1 triệu</b></a></li>
+                            <li><a href="#"><b>từ 1 đến 3 triệu</b></a></li>
+                            <li><a href="#"><b>từ 3 đến 6 triệu</b></a></li>
+                            <li><a href="#"><b>từ 6 đến 12 triệu</b></a></li>
+                            <li><a href="#"><b>từ 12 đến 19 triệu</b></a></li>
+                            <li><a href="#"><b>trên 20 triệu</b></a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="phu_kien_dt_view.html"><b>Phụ Kiện</b></a></li>
+            <li><a href="do_choi_cn.html"><b>Thiết Bị Gaming</b></a></li>
+            <li><a href="gio_hang.html"><b>Giỏ Hàng</b></a></li>
+            <li><a href="login.html"><b>Đăng Nhập</b></a></li>
+        </ul>
+    </section>
+    <section id="chinh">
+        <div class="breadcroumb">
+            <div class="bao-breadcroumb">
+                <a href="index.html" title="Go to Home page"><p>Trang chủ</p></a>
+            </div>
+            <i class="fas fa-angle-right fa-xs"></i>
+            <div class="bao-breadcroumb">
+                <a href="gio_hang.html"><p>Giỏ hàng</p></a>
+            </div>
+        </div>
+        <hr size="4px" width="82%" color="coral" style="margin-bottom: 20px; margin-left: 9%;">
+    </section>
+    <section id="main_content">
+        <div class="giohang">
+            <div class="giohang__header col l-12 m-12 c-12">
+                <p>GIỎ HÀNG</p>
+            </div>
+            <div class="col l-12 m-12 c-12">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Sản phẩm</th>
+                            <th style="min-width: 100px;">Tên sản phẩm</th>
+                            <th>Giá</th>
+                            <th style="min-width: 50px;">Số lượng</th>
+                            <th>Tổng</th>
+                            <th style="width: 100px;">Xóa</th>
+                        </tr>
+                    </thead>
+                    <tbody id="listCart">
+    
+                    </tbody>
+                </table>
+            </div>
+            <div class="giohang__tong col l-12 m-12 c-12">
+                <span>Tổng tiền đơn hàng:</span>
+                <span id="spTong" style="padding-left: 10px;">0</span>
+                <span><u>đ</u></span>
+            </div>
+            <div class="giohang__chucnang col l-12 m-12 c-12">
+                <button onclick="XoaCart()">XÓA GIỎ HÀNG</button>
+                <button onclick="updateCart()">CẬP NHẬT GIỎ HÀNG</button>
+                <button onclick="ThanhToan()">THANH TOÁN</button>
+            </div>
+        </div>
+    
+    </section>
+    <script>
+        function ThanhToan() {
+            window.location.href = "thanhtoan.html";
+        }
+        var list = JSON.parse(localStorage.getItem('giohang'));
+        function LoadData() {
+            var str = "";
+            var n = 0;
+            var t = 0;
+            for (x of list) {
+                t += x.price * x.quantity;
+                str += `<tr>                      
+                        <td><img style="width: 80px; height: 80px;" src="`+ x.image + `"> </td>
+                        <td class="tensp" style="font-weight: 600;">`+ x.name + `</td>
+                        <td style="font-weight: 600;">`+ x.price + `₫</td>
+                        <td style="font-weight: 600;"> 
+                            <button onclick="Giam(`+ x.id + `)">-</button>
+                            <input id="q_`+ Number(x.id)+`" onchange="updateQuantity(`+ x.id + `)" type="text" value="`+ x.quantity + `" style="width: 30px;" >
+                            <button onclick="Tang(`+ x.id + `)">+</button>
+                        </td>
+                        <td style="font-weight: 600;">`+ (x.price * x.quantity) + `₫</td>
+                        <td><i onclick="Xoa(`+ x.id + `)" class="fas fa-trash-alt fa-lg" style="color:#828282; cursor: pointer;"></i></td>
+                    </tr>
+                 `;
+            }
+            document.getElementById("listCart").innerHTML = str;
+            $("#spTong").text(t);
+        }
+        function XoaCart() {
+            localStorage.setItem('giohang', null);
+            location.reload();
+        }
+        function Xoa(id) {
+            var index = list.findIndex(x => x.id == id);
+            if (index >= 0) {
+                list.splice(index, 1);
+            }
+            LoadData();
+        }
+        function updateCart() {
+            localStorage.setItem('giohang', JSON.stringify(list));
+             alert("Đã cập nhật thông tin giỏ hàng thành công");
+        }
+        function Tang(id) {
+            var index = list.findIndex(x => x.id == id);
+            if (index >= 0) {
+                list[index].quantity += 1; 
+            }
+            LoadData();
+        }
+        function Giam(id) {
+            var index = list.findIndex(x => x.id == id);
+            if (index >= 0 && list[index].quantity >=1) {
+                list[index].quantity -= 1; 
+            }
+            LoadData();
+        }
+        function updateQuantity(id) {
+            var quantity = Number($('#q_'+id).val());
+            var index = list.findIndex(x => x.id == id);
+            if (index >= 0 && list[index].quantity >=1) {
+                list[index].quantity = quantity; 
+            }
+            LoadData();
+        }
+        LoadData();
+    </script>
+    <section id="thongtin">
+        <div class="header-thongtin">
+            <div class="nav__thongtin">
+                <img src="image/1x/logo_phone.jfif">
+                <div class="content_thongtin">
+                    <p>Hệ thống điện thoại uy tín toàn quốc</p>
+                <ul>
+                    <li>Hotline: 2001210288</li>
+                    <li>Cơ sở Sài Gòn: 140 Lê Trọng Tấn, Tây Thạnh, Tân Phú, Thành phố Hồ Chí Minh</li>
+                </ul>
+                </div>
+            </div>
+        </div>
+        <div class="header-hotro">
+            <div class="nav__hotro">
+            <h3>HỖ TRỢ KHÁCH HÀNG</h3>
+            <ul>
+                <li><a href="#">Cách sạc pin điện thoại kéo dài tuổi thọ pin</a></li>
+                <li><a href="#">Quy trình bảo hành điện thoại</a></li>
+                <li><a href="#">Các phần mềm diện thoại hữu ích nên có</a></li>
+            </ul>
+         </div>
+        </div>
+        <div class="header-dichvu">
+            <div class="nav__dichvu">
+                <h3>DỊCH VỤ KHÁCH HÀNG</h3>
+                <ul>
+                    <li><a href="#">Giới thiệu về Shop điện thoại</a></li>
+                    <li><a href="#">Hướng dẫn đặt hàng</a></li>
+                    <li><a href="#">Chính sách đổi trả và bảo hành</a></li>
+                    <li><a href="#">Chính sách bảo mật</a></li>
+                    <li><a href="#">Liên hệ Shop</a></li>
+                    <a href="index.html"><li>Hệ thống cửa hàng</li></a>
+                </ul>
+            </div>
+        </div>
+        <div class="header-thanhtoan">
+            <div class="nav__thanhtoan">
+                <h3>THANH TOÁN</h3>
+                <ul>
+         <img src="image/Visa_Inc._logo.svg.png" style="width: 20%;">
+         <img src=" image/iconmastercard.png" style="width: 20%;">
+         <img src=" image/iconatm.png" style="width: 20%;">
+                </ul>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/css_thanhtoan.css">
+    <link rel="stylesheet" href="reponsive.css">  
+    <link rel="stylesheet" href="fontawesome-free-5.15.3-web/css/all.min.css">  
+    <script src="jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <section>
+        <div class="header">
+            <div id="top1">
+                <a href="index.html"><img src="image/1x/logo_phone.jfif" style="width: 60%; height: 190%;"></a>               
+            </div>
+            <div class="seachbox">
+                <input type="text" placeholder="Tìm Kiếm Sản Phẩm ">
+                <div class="seach-btn">
+                    <a href="#"><i class="fa fa-search fa-2x" aria-hidden="true" style="color: white;"></i></a>
+                </div>
+            </div>
+            <div id="phone">
+                <img src="image/phone.svg" alt="">
+                <p>Gọi đặt hàng:</p>
+                <h2>2001210288</h2>
+            </div>
+            <div id="diachi">
+
+                <a href="https://goo.gl/maps/TfWURzQYkmLStJyi6">
+                    <img src="image/user.svg" alt="icon_map">
+                    <p>Tìm cửa hàng</p></a>
+            </div>
+        </div>
+    </section>
+    <section id="menu">
+       <ul>
+            <li><a href="index.html"><b>Trang Chủ</b></a></li>
+            <li><a href="dien_thoai_view.html"><b>Điện Thoại</b></a>
+                <ul class="submenu">
+                    <li><a href="#"><b>Hãng Sản Xuất</b></a>
+                        <ul class="submenu1">
+                            <li><a href="brand_samsung.html"><b>Samsung</b></a></li>
+                                <li><a href="brand_apple.html"><b>Apple</b></a></li>
+                                <li><a href="#"><b>Sony</b></a></li>
+                                <li><a href="#"><b>Xiaomi</b></a></li>
+                                <li><a href="#"><b>Oppo</b></a></li>
+                                <li><a href="#"><b>Huawei</b></a></li>
+                                <li><a href="#"><b>Vinsmart</b></a></li>
+                                <li><a href="#"><b>Nokia</b></a></li>
+                                <li><a href="#"><b>Vivo</b></a></li>
+                                <li><a href="#"><b>Bphone</b></a></li>
+                                <li><a href="#"><b>Oneplus</b></a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#"><b>Mức Giá</b></a>
+                        <ul class="submenu1">
+                            <li><a href="#"><b>dưới 1 triệu</b></a></li>
+                            <li><a href="#"><b>từ 1 đến 3 triệu</b></a></li>
+                            <li><a href="#"><b>từ 3 đến 6 triệu</b></a></li>
+                            <li><a href="#"><b>từ 6 đến 12 triệu</b></a></li>
+                            <li><a href="#"><b>từ 12 đến 19 triệu</b></a></li>
+                            <li><a href="#"><b>trên 20 triệu</b></a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="phu_kien_dt_view.html"><b>Phụ Kiện</b></a></li>
+            <li><a href="do_choi_cn.html"><b>Thiết Bị Gaming</b></a></li>
+            <li><a href="gio_hang.html"><b>Giỏ Hàng</b></a></li>
+            <li><a href="login.html"><b>Đăng Nhập</b></a></li>
+        </ul>
+    </section>
+    <section>
+        <div class="col-6 col-s-12 form-nhap">
+            <h2>THÔNG TIN THANH TOÁN</h2>
+            <form>
+                <div class="row" style="margin-top: 5px;">
+                    <div class="col-6 col-s-12">
+                        <label for="txt_hdem">Họ đệm <span id="s_hdem" style="color: red;">*</span></label><br>
+                        <input id="txt_hdem" type="text">
+                    </div>
+                    <div class="col-6 col-s-12">
+                        <div style="margin-left: 5px;">
+                            <label for="txt_ten">Tên <span id="s_ten" style="color: red;">*</span></label><br>
+                            <input id="txt_ten" type="text">
+                        </div>
+                    </div>
+                </div>
+                <div class="row" style="margin-top: 5px;">
+                    <div class="col-12 col-s-12">
+                        <label for="slt_qgia">Tỉnh thành <span id="s_qgia" style="color: red;">*</span> </label><br>
+                        <select id="slt_qgia">
+                            <option value="---">--Tỉnh thành--</option>
+                            <option value="HY">Phú Thọ</option>
+                            <option value="HN">Hà Nội</option>
+                            <option value="HCM">TP.Hồ Chí Minh</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row" style="margin-top: 5px;">
+                    <div class="col-12 col-s-12">
+                        <label for="txt_dchi">Địa chỉ:</label><br>
+                        <input type="text" id="txt_dchi">
+                    </div>
+                </div>
+                <div class="row" style="margin-top: 5px;">
+                    <div class="col-12 col-s-12">
+                        <label for="txt_email">Email <span style="color: red;" id="s_email"> </span> </label><br>
+                        <input type="text" id="txt_email">
+                    </div>
+                </div>
+
+                <div class="row" style="margin-top: 5px;">
+                    <div class="col-12 col-s-12">
+                        <label for="txt_dienthoai">Số điện thoại <span id="s_dienthoai"> </span></label><br>
+                        <input type="text" id="txt_dienthoai">
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="col-6 col-s-12 from-thanhtoan">
+            <h2>ĐƠN HÀNG CỦA BẠN</h2>
+            <div class="row thanhtoan">
+                <div class="col-12 col-s-12" style="text-align: left;">
+                    <label>SẢN PHẨM</label>
+                </div>
+                <div class="col-12 col-s-12" style="text-align: right;">
+                    <label>Tổng</label>
+                </div>
+            </div>
+            <div id="spham">
+
+            </div>
+            <div class="row tong">
+                <div class="col-8 col-s-12" style="text-align: left;">
+                    <label>TỔNG</label>
+                </div>
+                <div class="col-4 col-s-12" style="text-align: right;">
+                    <label id="tt">0</label>đ
+                </div>
+            </div>
+            <div class="row thanhtoan">
+                <div class="col-12 col-s-12" style="text-align: left;">
+                    <button onclick="DatHang()">ĐẶT HÀNG</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <script>
+        var list = JSON.parse(localStorage.getItem('giohang'));
+        function validateEmail(email) {
+            const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+            return re.test(String(email).toLowerCase());
+        }
+        function LoadData() {
+            var str = "";
+            var t = 0;
+            for (x of list) {
+                t += x.price * x.quantity;
+                str += `
+                <div class="row thanhtoan">
+                    <div class="col-8 col-s-12" style="text-align: left;">
+                        <label class="tensp">` + x.name + `*` + x.quantity + `</label>
+                    </div>
+                    <div class="col-4 col-s-12" style="text-align: right;">
+                        <label>`+ (x.price * x.quantity) + `đ</label>
+                    </div>
+                </div>
+                `;
+            }
+            $('#spham').html(str);
+            $('#tt').html(t);
+        }
+        LoadData();
+        function printHtml(data) {
+            let popupWin = window.open('', '_blank', 'top=0,left=0,height=100%,width=auto');
+            popupWin.document.write(`
+                <html>
+                    <head>
+                    <title>Print tab</title>
+                    <style>
+                        * {
+                            margin: 0;
+                            padding: 0;
+                        }
+                        table {
+                            width: 100%;
+                        }
+                        .donvi {
+                            font-size: 14px;
+                            font-weight: bold;
+                        }
+                        body {
+                            width: 1000px;
+                            margin: 0 auto;
+                        }
+                    </style>
+                    </head>
+                <body onload="window.print();window.close()">${data}</body>
+                </html>`
+            );
+            popupWin.document.close();
+        }
+        function printHtmlWithUrl(url) {
+            debugger;
+            let newWindow = window.open(url, '_blank', 'top=0,left=0,height=100%,width=auto');
+            newWindow.focus();
+            newWindow.print();
+            newWindow.close();
+        }
+    </script>
+    <section id="thongtin">
+        <div class="header-thongtin">
+            <div class="nav__thongtin">
+                <img src="image/1x/logo_phone.jfif">
+                <div class="content_thongtin">
+                    <p>Hệ thống điện thoại uy tín toàn quốc</p>
+                <ul>
+                    <li>Hotline: 2001210288</li>
+                    <li>Cơ sở Sài Gòn: 140 Lê Trọng Tấn, Tây Thạnh, Tân Phú, Thành phố Hồ Chí Minh</li>
+                </ul>
+                </div>
+            </div>
+        </div>
+        <div class="header-hotro">
+            <div class="nav__hotro">
+            <h3>HỖ TRỢ KHÁCH HÀNG</h3>
+            <ul>
+                <li><a href="#">Cách sạc pin điện thoại kéo dài tuổi thọ pin</a></li>
+                <li><a href="#">Quy trình bảo hành điện thoại</a></li>
+                <li><a href="#">Các phần mềm diện thoại hữu ích nên có</a></li>
+            </ul>
+         </div>
+        </div>
+        <div class="header-dichvu">
+            <div class="nav__dichvu">
+                <h3>DỊCH VỤ KHÁCH HÀNG</h3>
+                <ul>
+                    <li><a href="#">Giới thiệu về Shop điện thoại</a></li>
+                    <li><a href="#">Hướng dẫn đặt hàng</a></li>
+                    <li><a href="#">Chính sách đổi trả và bảo hành</a></li>
+                    <li><a href="#">Chính sách bảo mật</a></li>
+                    <li><a href="#">Liên hệ Shop</a></li>
+                    <a href="index.html"><li>Hệ thống cửa hàng</li></a>
+                </ul>
+            </div>
+        </div>
+        <div class="header-thanhtoan">
+            <div class="nav__thanhtoan">
+                <h3>THANH TOÁN</h3>
+                <ul>
+         <img src="image/Visa_Inc._logo.svg.png" style="width: 20%;">
+         <img src=" image/iconmastercard.png" style="width: 20%;">
+         <img src=" image/iconatm.png" style="width: 20%;">
+                </ul>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

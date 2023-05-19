@@ -1,0 +1,396 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header {
+    background: rgb(236,119,233);
+    background: linear-gradient(0deg, grey 20%, rgba(249,213,167,1) 100%);
+    height: 75px;
+    width: 100%;
+    display: flex;
+}
+#top1 img{
+    height: 110px;
+    width: 100%;
+    margin-left: 50px;
+    margin-top: -17px;
+}
+.header {
+    position: -webkit-sticky;
+    position: sticky;
+}
+.seachbox{
+    width: 30%;
+    height: 45px;
+    margin-top: 20px;
+    margin-left: 5%;
+    border-radius: 2em;
+    background-color:white;
+    display: flex;
+}
+.seachbox input{
+    width: 85%;
+    margin-top: 6px;
+    margin-left: 10px;
+    height: 30px;
+    font-size: 15px;
+    border: none;
+    outline: none;
+}
+.seach-btn{
+    width: 15%;
+    height: 45px;
+    background-color: rgba(255, 199, 153, 0.877);
+    border-radius: 0 2em 2em 0;
+    box-shadow: 4px 6px 10px 0 rgba(133, 132, 132, 0.7);
+}
+.seach-btn i{
+    margin-top: 7px;
+    margin-left: 12px;
+}
+#phone{
+    height: 80px;
+    width: 15%;
+    margin-left: 3%;
+}
+#phone img{
+    height: 40px;
+    width: 23%;
+    margin-top: 20px;
+}
+#phone p{
+    font-size: 14px;
+    margin-left: 50px;
+    margin-top: -47px;
+    text-transform: uppercase;
+}
+#phone h2{
+    margin-left: 24%;
+    margin-top: 7px;
+}
+#diachi{
+    height: 80px;
+    width: 14%;
+    margin-left: 8px;
+    cursor: pointer;
+}
+#diachi a img{
+    height: 40px;
+    width: 30%;
+    margin-top: 20px;
+}
+#diachi a p{
+    margin-left: 26%;
+    margin-top: -33px;
+    text-transform: uppercase;
+    color: black;
+    font-weight: 600;
+}
+#diachi a{
+    text-decoration: none;
+}
+/* kết thúc css header trang chủ */
+/* bắt đầu css menu chính */
+#menu a {
+    color: black;
+    text-decoration: none;
+}
+#menu {
+    width: 100%;
+    height: 50px;
+}
+#menu ul {
+    background: rgb(249,213,167);
+    background: linear-gradient(0deg, rgba(249,213,167,1) 6%, grey 100%);
+    list-style-type: none;
+    border-radius: 0 0 1em 1em;
+    text-align: center;
+}
+#menu > ul > li {
+    display: inline-block;
+    width: 150px;
+    position: relative;
+    font-size: 14;
+    line-height: 50px;
+    text-align: center;
+}
+.submenu > li {
+    font-size: 14;
+    line-height: 30px;
+    width: 150px;
+    text-align: left;
+    padding-left: 15px;
+    position: relative;
+}
+.submenu ul{
+    width: 100%;
+}
+#menu  ul li:hover {
+    background-color: coral;
+}
+.submenu { 
+    display: none;
+    position: absolute;
+}
+#menu  ul li:hover .submenu {
+    display: block;
+}
+.submenu1 {
+    display: none;
+    position: absolute;
+    top: 0px;
+    right: -150px;
+}
+.submenu1 > li{
+    font-size: 14;
+    line-height: 30px;
+    width: 150px;
+    text-align: center;
+}
+.submenu > li:hover .submenu1 {
+    display: block;
+}
+ /* css quảng cáo via */
+ .via {
+    width: 80%;
+    height: 300px;
+    margin-top: 30px;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+.mySlides img{
+    width: 80%;
+    height:300px;
+    border-radius: 1em;
+  } 
+  .active {
+    background-color: red;
+  }
+ /* css quảng cáo via */
+
+ /* css hàng hot */
+.tieu-de{
+    width: 15%;
+    height: 30px;
+    background-color: coral;
+    color: white;
+    margin-top: 15px;
+    margin-left: 9%;
+    border-radius: 1em 1em 0 0;
+}
+.tieu-de p{
+    position: absolute;
+    margin-top: 7px;
+    margin-left: 15px;
+}
+.sp-hot{
+    height: 290px;
+    width: 82%;
+    background-color: aqua;
+    margin-left: 9%;
+    margin-top: -19px;
+    display: flex;
+}
+.hot-brand{
+    position: relative;
+    width: 20%;
+    height: 290px;
+    display: inline-block;
+    background-color: white;
+    cursor: pointer;
+}
+.hot-brand img{
+    margin-top: 10px;
+    transition: all 0.3s ease;
+}
+.bao{
+    height: 290px;
+    overflow: hidden;
+}
+.bao a{
+    text-decoration: none;
+    color: black;
+}
+.danh-gia{
+    margin-top: 5px;
+    margin-left: 5px;
+}
+.box-name{
+    font-weight:700;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+.hot-brand .bao:hover img{
+    transform: scale(1.05);
+}
+.hot-brand .bao:hover {
+    border: black 1px solid;
+    box-shadow: 2px 2px 4px 4px rgba(128, 128, 128, 0.597);
+}
+
+ /* css hàng hot */
+/* css sản phẩm chính */
+#san-pham-chinh{
+    height: 1230px;
+    /* background-color: cadetblue; */
+}
+.row{
+    width: 82%;
+    height:400px ;
+    margin-left: 9%;
+    float: left;
+}
+.contentsp{
+    width: 100%;
+    height: 360px;
+
+}
+.contentsp img{
+    margin-top: 10px;
+    width: 90%;
+    transition: all 0.3s ease;
+}
+.contentsp:hover img{
+    transform: scale(1.05);
+}
+.bao-sp-chinh{
+    height: 360px;
+    overflow: hidden;
+}
+.bao-sp-chinh a{
+    text-decoration: none;
+    color: black;
+}
+.contentsp .bao-sp-chinh:hover{
+    border: black 1px solid;
+    box-shadow: 2px 2px 4px 4px rgba(128, 128, 128, 0.597);
+}
+/*  */
+/* css phụ kiện đt */
+#phu-kien{
+    width: 100%;
+    height: 860px;
+    position: relative;
+}
+/* CSS đồ chơi cn */
+#do-choi-cong-nghe{
+    width: 100%;
+    height: 860px;
+    position: relative;
+}
+/* css thông tin */
+#thongtin {
+    width: 100%;
+    height: 300px;
+    border-top: 1px solid grey ;
+    display: flex;
+    background-color:rgb(45, 45, 46);
+}
+.nav__thongtin {
+    width: 100%;
+    height: 270px;
+    display: flex;
+}
+.header-thongtin{
+    width: 120%;
+    display: flex;
+    margin-top: 10px;
+}
+.nav__thongtin img {
+    width: 25%;
+    height: 130px;
+    margin-left: 5%;
+}
+.nav__thongtin p {
+    font-weight: bolder;
+    text-align: left;
+    color:#fff;
+}
+.nav__thongtin ul {
+    height: 200px;
+    list-style: none;
+    margin-top: 20px;
+    /* margin: 10px; */
+    /* margin-left: 32.5%; */
+    color:rgba(255, 255, 255, 0.534);
+}
+.nav__thongtin li{
+    margin-bottom: 15px;
+    font-size: 15px;
+    color:rgba(255, 255, 255, 0.534);
+}
+.content_thongtin{
+    margin-top: 10px;
+    margin-left: 5%;
+}
+.header-hotro {
+    width: 80%;
+    height: 270px;
+    margin-top: 20px;
+}
+.nav__hotro h3 {
+   text-align: center;
+   color:#fff;
+}
+.nav__hotro ul {
+    height: 100px;
+    list-style: none;
+    margin-top: 15px;
+    margin-left: 12%;
+    color:rgba(255, 255, 255, 0.534);
+}
+.nav__hotro li{
+    margin-bottom: 20px;
+}
+.nav__hotro a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.534);
+}
+.header-dichvu {
+    width: 100%;
+    height: 270px;
+    margin-top: 20px;
+}
+.nav__dichvu a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.534);
+}
+.nav__dichvu h3 {
+    text-align: center;
+    color:#fff;
+}
+.nav__dichvu ul li {
+    list-style: none;
+    margin-top: 15px;
+    color:rgba(255, 255, 255, 0.534);
+    margin-left: 27% ;
+}
+.header-thanhtoan {
+    width: 80%;
+    height: 270px;
+    margin-top: 20px;
+}
+.nav__thanhtoan h3 {
+   text-align: center;
+   color:#fff;
+}
+.nav__thanhtoan ul {
+    height: 100px;
+    list-style: none;
+    margin-top: 15px;
+    margin-left: 12%;
+    color:rgba(255, 255, 255, 0.534);
+}
+.nav__thanhtoan li{
+    margin-bottom: 20px;
+}
+.nav__thanhtoan a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.534);
+}
+/* kết thúc css thông tin */
+
+
+
+
